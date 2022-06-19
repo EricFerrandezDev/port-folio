@@ -1,14 +1,18 @@
 import React from 'react';
 import { Box, Typography } from '@material-ui/core';
-import useStyles from './Header.styles';
+import useStyles from './HeaderAndMenu.styles';
+import Menu from './Menu';
 
 const Header = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.container}>
-      <Typography className={classes.headerText}>Eric Ferrández</Typography>
-    </Box>
+    <>
+      <Box className={classes.container}>
+        <Typography className={classes.headerText}>Eric Ferrández</Typography>
+      </Box>
+      <Menu />
+    </>
   );
 }
 
